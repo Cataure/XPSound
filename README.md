@@ -1,37 +1,44 @@
 # XPSound 🎧
 
-**XPSound** es un reproductor de música local para Android con una estética retro inspirada en los sistemas clásicos de los años 90 y reproductores legendarios como Winamp. 
+**XPSound** is a retro offline music player for Android inspired by the golden era of 90s audio software and classic desktop players like Winamp.
 
-Diseñado para usuarios que almacenan su música en el dispositivo, incorporando filtrado inteligente para separar canciones de archivos de edición de vídeo o notas de voz.
-
----
-
-## ✨ Características Principales
-
-* **Estética Retro Auténtica:** Interfaz nostálgica con botones biselados en relieve 3D, tipografía monoespaciada y temas visuales contrastados.
-* **Reproducción en Segundo Plano:** Motor de audio moderno impulsado por **AndroidX Media3 (ExoPlayer)** con servicio en primer plano para reproducción ininterrumpida con la pantalla bloqueada.
-* **Controles en Notificaciones:** Tarjeta multimedia nativa en la barra de estado y en la pantalla de bloqueo.
-* **Filtrado Inteligente de Audio:** Ignora automáticamente efectos de sonido, locuciones cortas (< 45 s) y notas de voz para mantener tu biblioteca limpia.
-* **Gestión de Playlists & Favoritos:** Creación de listas personalizadas con soporte para nombres con emojis, canciones favoritas (*Liked Songs*) y opciones de edición/eliminación respaldadas en base de datos local **Room**.
-* **Visor Osciloscopio:** Pantalla LCD central con visualizador de onda animado que acompaña la música.
-* **Barra de Búsqueda Fija:** Búsqueda en tiempo real por título o artista accesible en todo momento.
+Built specifically for users who store their music locally, XPSound features intelligent audio scanning to filter out video editing clips, sound effects, and voice notes—leaving only your actual music library.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## ✨ Key Features
 
-* **Lenguaje:** Kotlin
-* **Interfaz de Usuario:** Jetpack Compose (Material 3 con estilos personalizados)
-* **Motor Multimedia:** AndroidX Media3 (ExoPlayer & MediaSessionService)
-* **Persistencia Local:** Room Database (SQLite)
-* **Audio FX / Feedback:** SoundPool para respuestas táctiles y clics analógicos
-* **Compatibilidad:** Android 7.0 (API 24) en adelante — Compatible con smartphones y tablets
+* **Authentic Retro Aesthetic:** Nostalgic Windows 98 / Winamp-inspired UI with physical 3D beveled borders, monospace typography, and analog cassette click sound effects on button press.
+* **Persistent Background Playback:** Powered by modern **AndroidX Media3 (ExoPlayer & MediaSessionService)**, ensuring uninterrupted playback when your screen is locked or the app is minimized.
+* **Lock Screen & Notification Controls:** Native system media notification card with full transport controls (Play, Pause, Previous, Next) and live track metadata.
+* **Smart Audio Filtering:** Automatically filters out voice recordings, WhatsApp audio notes, and short audio clips (< 45 seconds) used in video editing workflows.
+* **Playlists & Liked Songs:** Create custom playlists with full emoji support, manage favorites (*Liked Songs*), and sort tracks by title, artist, or duration—fully backed by a local **Room SQLite database**.
+* **Oscilloscope Waveform Display:** Central LCD screen featuring an animated green frequency wave accompanying playback.
+* **Always-Available Search:** Fixed top search bar for instant real-time filtering across your entire music collection.
 
 ---
 
-## 📲 Instalación
+## 🛠️ Tech Stack
 
-Para instalar la aplicación directamente en cualquier dispositivo Android:
-1. Descarga el archivo `XPSound.apk` desde la sección de versiones o releases.
-2. Abre el archivo en tu teléfono y selecciona **Instalar**.
-3. Concede los permisos de lectura de audio para que la app explore tu biblioteca local.
+* **Language:** Kotlin
+* **UI Framework:** Jetpack Compose (Material 3 with custom retro design tokens)
+* **Audio Engine:** AndroidX Media3 (ExoPlayer, MediaSession)
+* **Local Persistence:** Room Database (SQLite) with KSP
+* **UI Sound FX & Haptics:** SoundPool & Android Haptic Feedback
+* **Device Compatibility:** Android 7.0 (API 24) and above — Full support for both smartphones and tablets
+
+---
+
+## 📲 Installation
+
+To install the application directly onto any Android device:
+
+1. Download the latest **`XPSound.apk`** from the project releases or shared build folder.
+2. Open the `.apk` file on your Android device and tap **Install** (allow installation from this source if prompted).
+3. Grant local audio permissions on first launch to allow the app to scan your device's music files.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
